@@ -155,8 +155,8 @@ export default function Page(){
               <div key={v.id} id={v.id} className="card">
                 <button className="aspect-9-16 w-full" onClick={()=>openVideo(v)} aria-label={`Open ${v.title}`}>
                   {/* Cover */}
-                  <Image src={v.cover} alt={v.title} fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/0 to-black/40" />
+                  <Image src={v.cover} alt={v.title} fill className="object-cover absolute-fill" />
+                  <div className="absolute-fill bg-gradient-to-b from-black/10 via-black/0 to-black/40" />
                   <div className="absolute left-2 top-2 flex gap-1.5">
                     <span className="badge bg-white">{v.platform}</span>
                     <span className="badge bg-black text-white border-black">{v.brand}</span>
@@ -212,7 +212,7 @@ export default function Page(){
               <video src={current.mp4} poster={current.cover} className="w-full h-full" controls playsInline />
             ) : isIFrame(current.embed) ? (
               <div className="aspect-9-16 w-full">
-                <div dangerouslySetInnerHTML={{ __html: current.embed }} />
+                <div className="absolute-fill" dangerouslySetInnerHTML={{ __html: current.embed }} />
               </div>
             ) : (
               <div className="aspect-9-16 w-full bg-neutral-900 grid place-items-center text-white">
