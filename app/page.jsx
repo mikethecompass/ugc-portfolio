@@ -305,7 +305,7 @@ export default function Page(){
             <p className="text-neutral-600 mt-2">Open to paid UGC, brand integrations, and long-term partnerships. Get the deck or email me for rates & availability.</p>
             <div className="flex flex-wrap gap-2 mt-4">
               <a className="btn btn-primary" href="#" onClick={(e)=>{e.preventDefault(); alert("Replace with your Media Kit URL.");}}>Download Media Kit</a>
-              <a className="btn" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+              <a className="btn" href="mailto:mikethecompass@gmail.com">mikethecompass@gmail.com</a>
               <a className="btn" href="tel:+10000000000">+1 (000) 000‑0000</a>
             </div>
           </div>
